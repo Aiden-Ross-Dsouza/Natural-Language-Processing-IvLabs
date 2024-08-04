@@ -36,4 +36,5 @@ We have implemented and compared the following architectures:
 * [Prayash Swain](https://github.com/SprayashB)
 * [Thanmay Jayakumar](https://github.com/ThanmayJ)
 * [Fauzan Farooqui](https://github.com/FauzanFarooqui)
-
+* [Rutvik Kulkarni](https://github.com/Rutvik1728)
+* [Aiden D'souza](https://github.com/Aiden-Ross-Dsouza)
