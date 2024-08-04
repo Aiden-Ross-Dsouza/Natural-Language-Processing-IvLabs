@@ -21,6 +21,10 @@ We have implemented and compared the following architectures:
     - [x] [Convolutional Sequence to Sequence Learning](https://arxiv.org/abs/1705.03122)
     - [x] [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 
+- [x] [Image Caption Generation](image_caption_generation)
+    - [x] LSTM
+    - [x] Transformer
+
 *The pending tasks and resources for studying and understading the required concepts will be added soon.*
 
 <br />
