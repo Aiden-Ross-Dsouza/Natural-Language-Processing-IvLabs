@@ -1,18 +1,22 @@
-# Neural Machine Translation
+# Image Caption Generation
 
-The machine translation task was traditionally performed using statistical methods. However, like most statistical paradigms, this Statistical Machine Translation (SMT) had large computational and memory overheads.
+## Introduction to Image Captioning
 
-With the popularization of neural networks and deep learning, heavy research into Neural Machine Translation (NMT) and its successful employment has largely replaced SMT. This section contains implementations of papers that introduced some of those ground-breaking architectures in NMT.
+Image captioning is the task of generating descriptive text for images. Initially, it was tackled using rule-based and retrieval methods, but these were limited and inefficient.
 
-All the models were trained on the [Multi30k](https://arxiv.org/abs/1605.00459) dataset which contains roughly 30 thousand English, German and French sentences, each sentence being 10-20 words long. We have trained and evaluated our models for translation from German to English.
+With the rise of deep learning, image captioning has seen a major shift. Modern methods use Convolutional Neural Networks (CNNs) to extract image features and Recurrent Neural Networks (RNNs) to generate text, leading to more accurate and flexible results.
+
+This repository focuses on these advanced neural approaches to image captioning.
+
+All the models were trained on the [Flickr8k](https://www.kaggle.com/datasets/adityajn105/flickr8k) dataset which contains 8,092 images that are each paired with five different captions.
 
 Below is a table addressing some common data and optimization related parameters.
 
 | Parameter      |       Value        |
 | -------------- |:------------------:|
-| Training Set   |    29000/31014     |
-| Testing Set    |     1000/31014     |
-| Validation Set |     1014/31014     |
+| Training Set   |    29000/8092     |
+| Testing Set    |     1000/8092     |
+| Validation Set |     1014/80092     |
 | Loss Function  | Cross Entropy Loss |
 | Optimizer      |       AdamW        |
 
@@ -56,6 +60,5 @@ Below is a table, summarising the number of parameters and the BLEU scores achie
   <img src = "https://github.com/IvLabs/Natural-Language-Processing/blob/master/neural_machine_translation/plots/Transformer.jpeg?raw=true"/>
 </p>
 
-
 ### Reference(s):
-* [PyTorch Seq2Seq by Ben Trevett](https://github.com/bentrevett/pytorch-seq2seq)
+* [PyTorch ImgCaptioning by Lalu Erfandi Maula Yusnu](https://github.com/nunenuh/imgcap.pytorch/blob/main/icap/data.py)
