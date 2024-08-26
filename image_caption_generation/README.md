@@ -2,9 +2,7 @@
 
 ## Introduction to Image Captioning
 
-Image captioning is the task of generating descriptive text for images. Initially, it was tackled using rule-based and retrieval methods, but these were limited and inefficient.
-
-With the rise of deep learning, image captioning has seen a major shift. Modern methods use Convolutional Neural Networks (CNNs) to extract image features and Recurrent Neural Networks (RNNs) to generate text, leading to more accurate and flexible results.
+Image captioning is the task of generating descriptive text for images. Early image captioning methods used template-based approaches, keyword mappings, and bag-of-words models, often resulting in rigid captions. Semantic models applied handcrafted rules to interpret object interactions, while probabilistic graphical models aimed to link visual features with text. Despite these innovations, captions frequently lacked depth and context before the advent of deep learning.
 
 This repository focuses on these advanced neural approaches to image captioning.
 
@@ -14,9 +12,9 @@ Below is a table addressing some common data and optimization related parameters
 
 | Parameter      |       Value        |
 | -------------- |:------------------:|
-| Training Set   |    29000/8092     |
-| Testing Set    |     1000/8092     |
-| Validation Set |     1014/8092     |
+| Training Set   |    5665/8092     |
+| Testing Set    |     809/8092     |
+| Validation Set |     1618/8092     |
 | Loss Function  | Cross Entropy Loss |
 | Optimizer      |       AdamW        |
 
