@@ -26,23 +26,11 @@ LSTMs are used in image captioning to generate sequences of words that describe 
 ### 4. [Transformer Architecture](https://github.com/Aiden-Ross-Dsouza/Natural-Language-Processing-IvLabs/blob/6857632075b374c98dec4e33e0c7a45e513f200d/image_caption_generation/notebooks/Image_Captioning_using_transformers.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1e7z1hDSe0fYEZDwqeMjDoB1e9zZTDU_q?usp=sharing)
 The encoder extracts visual features from the image using a convolutional neural network (CNN). These features are then input to a transformer decoder, which generates captions word by word. The transformer decoder leverages self-attention mechanisms to connect the current word to previously generated words and to incorporate the visual context from the CNN. During training, the model learns to predict the next word in the sequence by minimizing the difference between the predicted and actual captions. During inference, the decoder sequentially generates the full caption until it produces an end-of-sentence token. This approach effectively merges the visual feature extraction strengths of CNNs with the sequence modeling capabilities of transformer decoders, resulting in coherent and contextually accurate captions.
 
-## Summary
-Below is a table, summarising the number of parameters and the BLEU scores achieved by each architecture.
-
-| Architecture                        | No. of Trainable Parameters | BLEU Score |
-| ----------------------------------- |:---------------------------:|:----------:|
-| LSTM                                |         13,899,013          |   18.94    |
-| Transformer                         |         20,518,917          |   31.24    |
-
-<ins>**Note:**</ins>
-1. The above BLEU scores may vary slightly upon training the models (even with fixed SEED).
-
 ## Plots
 <p align="center">
-  <img src = "https://github.com/IvLabs/Natural-Language-Processing/blob/master/neural_machine_translation/plots/Seq2Seq.jpeg?raw=true"/>
-  <img src = "https://github.com/IvLabs/Natural-Language-Processing/blob/master/neural_machine_translation/plots/Seq2Seq_with_Attention.jpeg?raw=true"/> 
-  <img src = "https://github.com/IvLabs/Natural-Language-Processing/blob/master/neural_machine_translation/plots/Conv_Seq2Seq.jpeg?raw=true"/>
-  <img src = "https://github.com/IvLabs/Natural-Language-Processing/blob/master/neural_machine_translation/plots/Transformer.jpeg?raw=true"/>
+  Training Loss
+  ![Screenshot 2024-09-10 113826](https://github.com/user-attachments/assets/7e3afa9f-9c35-4c0c-8626-afc2b745d747)
+
 </p>
 
 ### Reference(s):
