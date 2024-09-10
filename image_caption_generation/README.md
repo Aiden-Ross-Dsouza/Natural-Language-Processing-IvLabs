@@ -27,11 +27,9 @@ LSTMs are used in image captioning to generate sequences of words that describe 
 The encoder extracts visual features from the image using a convolutional neural network (CNN). These features are then input to a transformer decoder, which generates captions word by word. The transformer decoder leverages self-attention mechanisms to connect the current word to previously generated words and to incorporate the visual context from the CNN. During training, the model learns to predict the next word in the sequence by minimizing the difference between the predicted and actual captions. During inference, the decoder sequentially generates the full caption until it produces an end-of-sentence token. This approach effectively merges the visual feature extraction strengths of CNNs with the sequence modeling capabilities of transformer decoders, resulting in coherent and contextually accurate captions.
 
 ## Plots
-<p align="center">
-  Training Loss
-  ![Screenshot 2024-09-10 113826](https://github.com/user-attachments/assets/7e3afa9f-9c35-4c0c-8626-afc2b745d747)
+Training Loss
+![Screenshot 2024-09-10 113826](https://github.com/user-attachments/assets/7e3afa9f-9c35-4c0c-8626-afc2b745d747)
 
-</p>
 
 ### Reference(s):
 * [PyTorch ImgCaptioning by Lalu Erfandi Maula Yusnu](https://github.com/nunenuh/imgcap.pytorch/blob/main/icap/data.py)
